@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'jbuilder'
 
 group :development, :test do
-  gem 'rspec-rails', '2.14.0'
+  gem 'shoulda-matchers'
+  gem 'rspec-rails'
   gem 'pry'
 end
