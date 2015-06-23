@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Dijkstra::Dijkstra do
   let(:node_a) { Dijkstra::Node.new("A") }

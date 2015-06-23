@@ -1,7 +1,7 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe API::DeliveriesController do
-  let!(:map) { FactoryGirl.create(:map) }
+  let!(:map) { create(:map) }
 
   describe "GET #index" do
     let!(:params) do

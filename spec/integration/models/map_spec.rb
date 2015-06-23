@@ -1,7 +1,7 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Map do
-  let!(:map) { FactoryGirl.create(:map) }
+  let!(:map) { create(:map) }
 
   describe 'validations' do
     it { should validate_uniqueness_of(:name) }

@@ -1,7 +1,7 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Delivery do
-  let!(:map) { FactoryGirl.create(:map) }
+  let!(:map) { create(:map) }
 
   context "delivery from A to D with autonomy: 10 and fuel_cost: 2.5" do
     subject do

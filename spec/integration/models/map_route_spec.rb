@@ -1,11 +1,11 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe MapRoute do
-  let!(:map_route) { FactoryGirl.create(:map_route) }
+  let!(:map_route) { create(:map_route) }
 
   describe 'validations' do
     subject do
-      FactoryGirl.build(:map_route, map_id: map_route.map_id)
+      build(:map_route, map_id: map_route.map_id)
     end
 
     it "unquiness of from"  do

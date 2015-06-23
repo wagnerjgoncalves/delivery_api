@@ -1,7 +1,7 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe API::MapRoutesController do
-  let!(:map) { FactoryGirl.create(:map) }
+  let!(:map) { create(:map) }
 
   describe "POST #create" do
     context "success" do

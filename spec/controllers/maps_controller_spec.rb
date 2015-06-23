@@ -1,9 +1,9 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe API::MapsController do
 
   describe "GET #index" do
-    let!(:map) { FactoryGirl.create(:map) }
+    let!(:map) { create(:map) }
 
     before do
       get :index
